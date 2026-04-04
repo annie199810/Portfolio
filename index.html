@@ -375,7 +375,9 @@
         <h3 class="text-xl font-bold mb-2">Hostel Management System</h3>
         <p class="text-slate-400 text-sm mb-4">Full-stack application for managing rooms, residents, payments, and maintenance requests. Features role-based access and analytics dashboard.</p>
         <div class="flex flex-wrap gap-2 mb-4">
-         <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300">React</span> <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300">Node.js</span> <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300">MongoDB</span>
+         <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300">React js</span> 
+         <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300">Node.js</span> 
+         <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300">MongoDB</span>
         </div>
         <div class="flex gap-3 flex-wrap">
   
@@ -407,7 +409,7 @@
         <div class="project-overlay">
          <div class="text-center">
           <h3 class="text-xl font-bold mb-2">Kanban Board</h3>
-          <p class="text-sm text-slate-300">React js • Tailwind css • Context API</p>
+          <p class="text-sm text-slate-300">React js • Node.js • MongoDB</p>
          </div>
         </div>
        </div>
@@ -417,8 +419,8 @@
          Developed a Kanban-style task management application that allows users to organize tasks across different stages like To Do, In Progress, and Done. Implemented smooth drag-and-drop functionality.</p>
         <div class="flex flex-wrap gap-2">
          <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300">React js</span>
-          <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300">Tailwind css</span>
-           <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300">Context API</span>
+          <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300">Node.js</span>
+           <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300">MongoDB</span>
         </div>
         <br>
          <div class="flex gap-3">
@@ -436,7 +438,7 @@
         <div class="project-overlay">
          <div class="text-center">
           <h3 class="text-xl font-bold mb-2">Recipe App</h3>
-          <p class="text-sm text-slate-300">React js • Tailwind css • REST API</p>
+          <p class="text-sm text-slate-300">React js • Node.js • MongoDB</p>
          </div>
         </div>
        </div>
@@ -446,8 +448,8 @@
           Developed a dynamic recipe application that allows users to browse, search, and filter recipes using data from a public meals API. Focused on building a responsive UI and smooth user experience.</p>
         <div class="flex flex-wrap gap-2">
          <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300">React js</span> 
-         <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300">Tailwind css</span>
-          <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300">REST API</span>
+         <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300">Node.js</span>
+          <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300">MongoDB</span>
         </div>
         <br>
          <div class="flex gap-3">
@@ -575,6 +577,26 @@
        <h3 class="font-bold mb-2">Availability</h3>
        <p class="text-slate-400 text-sm">Open for opportunities</p>
       </div>
+     </div>
+      <div class="max-w-2xl mx-auto mb-12">
+      <div class="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-xl p-8">
+       <h3 class="text-2xl font-bold mb-6">Send me a Message</h3>
+       <form  action="https://formspree.io/f/xvzvwrqp" method="POST" id="contact-form" class="space-y-4">
+        <div class="grid md:grid-cols-2 gap-4">
+         <div><label for="form-name" class="block text-sm font-medium text-slate-300 mb-2">Name</label> <input type="text" id="form-name" name="name" required class="w-full px-4 py-2 bg-slate-900 border border-slate-600 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors" placeholder="Your name">
+         </div>
+         <div><label for="form-email" class="block text-sm font-medium text-slate-300 mb-2">Email</label> <input type="email" id="form-email" name="email" required class="w-full px-4 py-2 bg-slate-900 border border-slate-600 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors" placeholder="your@email.com">
+         </div>
+        </div>
+        <div><label for="form-subject" class="block text-sm font-medium text-slate-300 mb-2">Subject</label> <input type="text" id="form-subject" name="subject" required class="w-full px-4 py-2 bg-slate-900 border border-slate-600 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors" placeholder="What's this about?">
+        </div>
+        <div><label for="form-message" class="block text-sm font-medium text-slate-300 mb-2">Message</label> <textarea id="form-message" name="message" rows="5" required class="w-full px-4 py-2 bg-slate-900 border border-slate-600 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors resize-none" placeholder="Tell me more..."></textarea>
+        </div>
+        
+        <div id="form-status" class="hidden p-3 rounded-lg text-center font-medium transition-all duration-300"></div>
+        <button type="submit" class="w-full px-8 py-3 gradient-bg text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/50 transition-all transform hover:scale-105"> Send Message </button>
+       </form>
+      </div>
      </div><!-- Social Links -->
      <div class="flex justify-center gap-4">
       <a href="https://github.com/annie199810" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-lg bg-slate-700 border border-slate-600 flex items-center justify-center hover:bg-purple-500 hover:border-purple-500 transition-all" aria-label="GitHub">
@@ -694,6 +716,49 @@
         mapToEditPanelValues
       });
     }
+
+
+    
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    var form = e.target;
+    var statusDiv = document.getElementById("form-status");
+
+    var data = new FormData(form);
+
+    fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(function(response) {
+        if (response.ok) {
+            statusDiv.classList.remove("hidden");
+            statusDiv.classList.remove("bg-red-500");
+            statusDiv.classList.add("bg-green-500", "text-white");
+
+            statusDiv.innerHTML = "Message sent successfully ✅";
+
+            form.reset();
+        } else {
+            statusDiv.classList.remove("hidden");
+            statusDiv.classList.remove("bg-green-500");
+            statusDiv.classList.add("bg-red-500", "text-white");
+
+            statusDiv.innerHTML = "Something went wrong ❌";
+        }
+    }).catch(function(error) {
+        statusDiv.classList.remove("hidden");
+        statusDiv.classList.add("bg-red-500", "text-white");
+
+        statusDiv.innerHTML = "Error sending message ❌";
+    });
+    setTimeout(function() {
+    statusDiv.classList.add("hidden");
+}, 3000);
+});
   </script>
  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e600ef16445f56a',t:'MTc3NTEzNTI2NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
